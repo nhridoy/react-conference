@@ -10,8 +10,8 @@ const Hero = () => {
 
       <Image
         src="/images/banner_2.png"
-        width={1000}
-        height={1000}
+        width={1000000}
+        height={1000000}
         className="md:col-start-1 md:col-span-4 w-1/2 md:w-96 order-4 md:order-2"
       />
 
@@ -30,8 +30,8 @@ const Hero = () => {
 
       <Image
         src="/images/banner_1.png"
-        width={10000}
-        height={1000}
+        width={1000000}
+        height={1000000}
         className="md:col-start-8 md:col-end-12 w-full md:w-96 md:absolute md:top-32 md:ml-5 order-3 md:order-4"
       />
       <p className="hidden cursor-pointer order-5 col-start-6 -rotate-90 md:absolute bottom-32 md:flex items-center gap-4">
