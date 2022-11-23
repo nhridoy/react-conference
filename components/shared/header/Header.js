@@ -20,7 +20,7 @@ const Header = () => {
       <div
         className={`${
           toggle
-            ? "flex flex-col md:flex-row gap-5 md:gap-14 bg-white/25 backdrop-blur-lg fixed inset-0 justify-center items-center animate__animated animate__bounceInDown"
+            ? "flex flex-col md:flex-row gap-5 md:gap-14 bg-white/50 backdrop-blur-lg fixed inset-0 justify-center items-center animate__animated animate__bounceInDown z-10"
             : "hidden md:flex flex-col md:flex-row md:gap-14 "
         }`}
       >

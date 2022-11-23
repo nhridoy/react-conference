@@ -6,6 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    // colors: {
+    //   primary: "#FFC93E",
+    //   secondary: "#725114",
+    //   clr: "#0A142F",
+    // },
   },
   plugins: [],
 };
