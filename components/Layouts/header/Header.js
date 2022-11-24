@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <div className="container sm:mx-auto px-6 py-8 flex justify-between items-center">
-      <Link href="">
+      <Link href="/">
         <Image
           src="/images/logo.svg"
           width={100}
@@ -24,11 +24,11 @@ const Header = () => {
             : "hidden md:flex flex-col md:flex-row md:gap-14 "
         }`}
       >
-        <Link href="">About Us</Link>
-        <Link href="">What We Do</Link>
-        <Link href="">Our Work</Link>
-        <Link href="">Blog</Link>
-        <Link href="">Say hi</Link>
+        <Link href="/">About Us</Link>
+        <Link href="/">What We Do</Link>
+        <Link href="/">Our Work</Link>
+        <Link href="/">Blog</Link>
+        <Link href="/">Say hi</Link>
         <HiOutlineXMark
           className="text-xl cursor-pointer block md:hidden"
           onClick={() => setToggle(!toggle)}

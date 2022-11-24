@@ -21,7 +21,7 @@ const Calender = () => {
             <td className="p-10 md:p-0 w-36 h-36 border text-center">
               <span className="font-bold">sdasdd</span>
               <Link
-                href="/"
+                href="/2"
                 className="p-1 bg-blue-600/30 border-blue-700 border rounded-lg text-blue-700 flex flex-col m-2"
               >
                 <span className="font-semibold">sdsdasda</span>
