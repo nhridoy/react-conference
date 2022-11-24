@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Hero from "../components/Hero/Hero";
+import Scheduler from "../components/Scheduler/Scheduler";
 import Header from "../components/shared/header/Header";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <main className="h-screen bg-gradient-to-b from-pink-100 ">
         <Header />
         <Hero />
+        <Scheduler />
       </main>
     </div>
   );
