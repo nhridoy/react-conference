@@ -11,12 +11,14 @@
   "dependencies": {
     "@fontsource/inter": "^4.5.14",
     "animate.css": "^4.1.1",
+    "array-move": "^4.0.0",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.4",
     "next": "13.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.6.0"
+    "react-icons": "^4.6.0",
+    "react-sortable-hoc": "^2.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

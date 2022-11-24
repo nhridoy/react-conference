@@ -30,6 +30,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@fontsource/inter", "npm:4.5.14"],\
             ["animate.css", "npm:4.1.1"],\
+            ["array-move", "npm:4.0.0"],\
             ["autoprefixer", "virtual:34be0e2f5ffd8559855cb15e0c06ddc7bb046a0c3358efa7eb3698a8af468ed54ac4db37db0a01613f725dcb908545a392c8d37a057b3a43a9b4a80b4805bd1a#npm:10.4.13"],\
             ["eslint", "npm:8.28.0"],\
             ["eslint-config-next", "virtual:34be0e2f5ffd8559855cb15e0c06ddc7bb046a0c3358efa7eb3698a8af468ed54ac4db37db0a01613f725dcb908545a392c8d37a057b3a43a9b4a80b4805bd1a#npm:13.0.4"],\
@@ -38,6 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:34be0e2f5ffd8559855cb15e0c06ddc7bb046a0c3358efa7eb3698a8af468ed54ac4db37db0a01613f725dcb908545a392c8d37a057b3a43a9b4a80b4805bd1a#npm:18.2.0"],\
             ["react-icons", "virtual:34be0e2f5ffd8559855cb15e0c06ddc7bb046a0c3358efa7eb3698a8af468ed54ac4db37db0a01613f725dcb908545a392c8d37a057b3a43a9b4a80b4805bd1a#npm:4.6.0"],\
+            ["react-sortable-hoc", "virtual:34be0e2f5ffd8559855cb15e0c06ddc7bb046a0c3358efa7eb3698a8af468ed54ac4db37db0a01613f725dcb908545a392c8d37a057b3a43a9b4a80b4805bd1a#npm:2.0.0"],\
             ["tailwindcss", "virtual:34be0e2f5ffd8559855cb15e0c06ddc7bb046a0c3358efa7eb3698a8af468ed54ac4db37db0a01613f725dcb908545a392c8d37a057b3a43a9b4a80b4805bd1a#npm:3.2.4"]\
           ],\
           "linkType": "SOFT"\
@@ -673,6 +675,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["es-abstract", "npm:1.20.4"],\
             ["get-intrinsic", "npm:1.1.3"],\
             ["is-string", "npm:1.0.7"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["array-move", [\
+        ["npm:4.0.0", {\
+          "packageLocation": "./.yarn/cache/array-move-npm-4.0.0-1fb9f6ce4b-307e6716e8.zip/node_modules/array-move/",\
+          "packageDependencies": [\
+            ["array-move", "npm:4.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2309,6 +2320,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["invariant", [\
+        ["npm:2.2.4", {\
+          "packageLocation": "./.yarn/cache/invariant-npm-2.2.4-717fbdb119-cc3182d793.zip/node_modules/invariant/",\
+          "packageDependencies": [\
+            ["invariant", "npm:2.2.4"],\
+            ["loose-envify", "npm:1.4.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["ip", [\
         ["npm:2.0.0", {\
           "packageLocation": "./.yarn/cache/ip-npm-2.0.0-204facb3cc-cfcfac6b87.zip/node_modules/ip/",\
@@ -3498,6 +3519,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-conference", "workspace:."],\
             ["@fontsource/inter", "npm:4.5.14"],\
             ["animate.css", "npm:4.1.1"],\
+            ["array-move", "npm:4.0.0"],\
             ["autoprefixer", "virtual:34be0e2f5ffd8559855cb15e0c06ddc7bb046a0c3358efa7eb3698a8af468ed54ac4db37db0a01613f725dcb908545a392c8d37a057b3a43a9b4a80b4805bd1a#npm:10.4.13"],\
             ["eslint", "npm:8.28.0"],\
             ["eslint-config-next", "virtual:34be0e2f5ffd8559855cb15e0c06ddc7bb046a0c3358efa7eb3698a8af468ed54ac4db37db0a01613f725dcb908545a392c8d37a057b3a43a9b4a80b4805bd1a#npm:13.0.4"],\
@@ -3506,6 +3528,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:34be0e2f5ffd8559855cb15e0c06ddc7bb046a0c3358efa7eb3698a8af468ed54ac4db37db0a01613f725dcb908545a392c8d37a057b3a43a9b4a80b4805bd1a#npm:18.2.0"],\
             ["react-icons", "virtual:34be0e2f5ffd8559855cb15e0c06ddc7bb046a0c3358efa7eb3698a8af468ed54ac4db37db0a01613f725dcb908545a392c8d37a057b3a43a9b4a80b4805bd1a#npm:4.6.0"],\
+            ["react-sortable-hoc", "virtual:34be0e2f5ffd8559855cb15e0c06ddc7bb046a0c3358efa7eb3698a8af468ed54ac4db37db0a01613f725dcb908545a392c8d37a057b3a43a9b4a80b4805bd1a#npm:2.0.0"],\
             ["tailwindcss", "virtual:34be0e2f5ffd8559855cb15e0c06ddc7bb046a0c3358efa7eb3698a8af468ed54ac4db37db0a01613f725dcb908545a392c8d37a057b3a43a9b4a80b4805bd1a#npm:3.2.4"]\
           ],\
           "linkType": "SOFT"\
@@ -3562,6 +3585,37 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/react-is-npm-16.13.1-a9b9382b4f-f7a19ac349.zip/node_modules/react-is/",\
           "packageDependencies": [\
             ["react-is", "npm:16.13.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-sortable-hoc", [\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/react-sortable-hoc-npm-2.0.0-4b79ba40c5-c4930856eb.zip/node_modules/react-sortable-hoc/",\
+          "packageDependencies": [\
+            ["react-sortable-hoc", "npm:2.0.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:34be0e2f5ffd8559855cb15e0c06ddc7bb046a0c3358efa7eb3698a8af468ed54ac4db37db0a01613f725dcb908545a392c8d37a057b3a43a9b4a80b4805bd1a#npm:2.0.0", {\
+          "packageLocation": "./.yarn/__virtual__/react-sortable-hoc-virtual-7b4f39eacd/0/cache/react-sortable-hoc-npm-2.0.0-4b79ba40c5-c4930856eb.zip/node_modules/react-sortable-hoc/",\
+          "packageDependencies": [\
+            ["react-sortable-hoc", "virtual:34be0e2f5ffd8559855cb15e0c06ddc7bb046a0c3358efa7eb3698a8af468ed54ac4db37db0a01613f725dcb908545a392c8d37a057b3a43a9b4a80b4805bd1a#npm:2.0.0"],\
+            ["@babel/runtime", "npm:7.20.1"],\
+            ["@types/prop-types", null],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["invariant", "npm:2.2.4"],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:34be0e2f5ffd8559855cb15e0c06ddc7bb046a0c3358efa7eb3698a8af468ed54ac4db37db0a01613f725dcb908545a392c8d37a057b3a43a9b4a80b4805bd1a#npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/prop-types",\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
