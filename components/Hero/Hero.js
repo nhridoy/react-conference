@@ -9,6 +9,7 @@ const Hero = () => {
       </h1>
 
       <Image
+        alt="banner two"
         src="/images/banner_2.png"
         width={1000000}
         height={1000000}
@@ -29,6 +30,7 @@ const Hero = () => {
       </div>
 
       <Image
+        alt="banner one"
         src="/images/banner_1.png"
         width={1000000}
         height={1000000}

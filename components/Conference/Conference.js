@@ -15,7 +15,8 @@ const SortableList = SortableContainer(({ items }) => {
   );
 });
 
-const Conference = () => {
+const Conference = ({ data }) => {
+  console.log(data);
   const [items, setItems] = useState([
     "Item 1",
     "Item 2",
@@ -30,7 +31,7 @@ const Conference = () => {
 
   return (
     <>
-      <h2 className="font-bold text-4xl mb-4 mt-16">Conference info</h2>
+      <h2 className="font-bold text-4xl mb-4 mt-16">Conference info </h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, cumque.
       </p>
