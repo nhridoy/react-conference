@@ -37,6 +37,7 @@ const Hero = () => {
       </div>
 
       <Image
+        priority={true}
         alt="banner one"
         src="/images/banner_1.png"
         width={1000000}

@@ -11,7 +11,6 @@ const index = ({ data }) => {
 const endpoint = "https://api.react-finland.fi/graphql/";
 
 export const getServerSideProps = async (ctx) => {
-  resetServerContext();
   const { conferenceId } = ctx.query;
   const QUERY = gql`
 {
@@ -72,7 +71,7 @@ export const getServerSideProps = async (ctx) => {
 }
 `;
   const { data } = await client.query({ query: QUERY });
-
+  resetServerContext();
   return {
     props: {
       data: data?.conference,
