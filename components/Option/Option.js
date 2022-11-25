@@ -1,6 +1,5 @@
 import { BsArrowDownUp } from "react-icons/bs";
 const Option = ({ name, selected, setSelected }) => {
-  console.log(selected);
   return (
     <div
       onClick={() => setSelected(name)}

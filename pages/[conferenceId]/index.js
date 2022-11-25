@@ -1,5 +1,6 @@
 import Conference from "../../components/Conference/Conference";
 import Layout from "../../components/Layouts/Layout/Layout";
+import { resetServerContext } from "react-beautiful-dnd";
 
 const index = ({ data }) => {
   return <Layout children={<Conference data={data} />} />;
@@ -8,6 +9,7 @@ const index = ({ data }) => {
 const endpoint = "https://api.react-finland.fi/graphql/";
 
 export const getServerSideProps = async (ctx) => {
+  resetServerContext();
   const { conferenceId } = ctx.query;
   const QUERY = `
 {

@@ -1,6 +1,5 @@
 import Link from "next/link";
 const Calender = ({ conferences }) => {
-  // console.log(conferences);
   const data = {};
   for (const key in conferences) {
     if (Object.hasOwnProperty.call(conferences, key)) {
@@ -14,7 +13,7 @@ const Calender = ({ conferences }) => {
       data[element.year].push(element);
     }
   }
-  console.log(data);
+
   return (
     <div className="rounded-xl border overflow-x-auto">
       <table className="w-full">

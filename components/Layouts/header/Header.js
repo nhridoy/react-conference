@@ -4,7 +4,6 @@ import { useState } from "react";
 import { HiBars3CenterLeft, HiOutlineXMark } from "react-icons/hi2";
 const Header = () => {
   const [toggle, setToggle] = useState(false);
-  console.log(toggle);
 
   return (
     <div className="container sm:mx-auto px-6 py-8 flex justify-between items-center">
