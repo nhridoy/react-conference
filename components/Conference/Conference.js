@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import SelectedDetails from "../SelectedDetails/SelectedDetails";
 
-const Conference = ({ data }) => {
+const Conference = ({ data: { __typename, ...data } }) => {
   const [items, setItems] = useState(Object.keys(data));
   const [selected, setSelected] = useState(items[0]);
   const [selectedDetails, setSelectedDetails] = useState([]);

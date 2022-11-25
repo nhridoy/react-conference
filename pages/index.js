@@ -4,7 +4,8 @@ import Hero from "../components/Hero/Hero";
 import Scheduler from "../components/Scheduler/Scheduler";
 import Header from "../components/Layouts/header/Header";
 import Layout from "../components/Layouts/Layout/Layout";
-import axios from "axios";
+import { gql } from "@apollo/client";
+import client from "../utils/apollo-client";
 
 export default function Home({ conferences }) {
   return (
@@ -25,31 +26,26 @@ export default function Home({ conferences }) {
     </div>
   );
 }
-const endpoint = "https://api.react-finland.fi/graphql/";
-const QUERY = `
-{
-  conferences {
-    id
-    name
-    year
-    startDate
-    locations {
-      city
+
+const QUERY = gql`
+  {
+    conferences {
+      id
+      name
+      year
+      startDate
+      locations {
+        city
+      }
     }
   }
-}
 `;
 
 export const getServerSideProps = async (ctx) => {
-  const res = await fetch(endpoint, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ query: QUERY }),
-  });
-  const data = await res.json();
+  const { data } = await client.query({ query: QUERY });
   return {
     props: {
-      conferences: data?.data?.conferences,
+      conferences: data?.conferences,
     },
   };
 };

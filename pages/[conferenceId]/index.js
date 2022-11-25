@@ -1,6 +1,8 @@
 import Conference from "../../components/Conference/Conference";
 import Layout from "../../components/Layouts/Layout/Layout";
 import { resetServerContext } from "react-beautiful-dnd";
+import client from "../../utils/apollo-client";
+import { gql } from "@apollo/client";
 
 const index = ({ data }) => {
   return <Layout children={<Conference data={data} />} />;
@@ -11,7 +13,7 @@ const endpoint = "https://api.react-finland.fi/graphql/";
 export const getServerSideProps = async (ctx) => {
   resetServerContext();
   const { conferenceId } = ctx.query;
-  const QUERY = `
+  const QUERY = gql`
 {
   conference(id: "${conferenceId}") {
     organizers {
@@ -69,15 +71,11 @@ export const getServerSideProps = async (ctx) => {
   }
 }
 `;
-  const res = await fetch(endpoint, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ query: QUERY }),
-  });
-  const data = await res.json();
+  const { data } = await client.query({ query: QUERY });
+
   return {
     props: {
-      data: data?.data?.conference,
+      data: data?.conference,
     },
   };
 };
