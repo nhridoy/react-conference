@@ -17,18 +17,6 @@ const Calender = ({ conferences }) => {
   return (
     <div className="rounded-xl border overflow-x-auto">
       <table className="w-full">
-        {/* <thead className="h-16">
-          <tr>
-            <th className="border"></th>
-            <th>Tue</th>
-            <th>Wed</th>
-            <th>Thu</th>
-            <th>Fri</th>
-            <th>Sat</th>
-            <th>Sun</th>
-            <th>Mon</th>
-          </tr>
-        </thead> */}
         <tbody>
           {Object.keys(data).map((item, index) => (
             <tr key={index}>

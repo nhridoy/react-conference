@@ -2,6 +2,13 @@ import { BsArrowUpRight } from "react-icons/bs";
 import { FiArrowLeft } from "react-icons/fi";
 import Image from "next/image";
 const Hero = () => {
+  const handleScrollDown = () => {
+    window.scroll({
+      top: document.body.offsetHeight,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="grid md:grid-cols-12 gap-5 relative">
       <h1 className="text-5xl md:text-7xl font-bold text-right md:col-start-3 md:col-span-5 text-clr order-1">
@@ -36,7 +43,10 @@ const Hero = () => {
         height={1000000}
         className="md:col-start-8 md:col-end-12 w-full md:w-96 md:absolute md:top-32 md:ml-5 order-3 md:order-4"
       />
-      <p className="hidden cursor-pointer order-5 col-start-6 -rotate-90 md:absolute bottom-32 md:flex items-center gap-4">
+      <p
+        onClick={handleScrollDown}
+        className="hidden cursor-pointer order-5 col-start-6 -rotate-90 md:absolute bottom-32 md:flex items-center gap-4"
+      >
         <FiArrowLeft /> Scroll Down
       </p>
     </div>
