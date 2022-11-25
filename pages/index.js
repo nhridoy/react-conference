@@ -26,7 +26,7 @@ export default function Home({ conferences }) {
   );
 }
 const endpoint = "https://api.react-finland.fi/graphql/";
-const FILMS_QUERY = `
+const QUERY = `
 {
   conferences {
     id
@@ -44,7 +44,7 @@ export const getServerSideProps = async (ctx) => {
   const res = await fetch(endpoint, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ query: FILMS_QUERY }),
+    body: JSON.stringify({ query: QUERY }),
   });
   const data = await res.json();
   return {

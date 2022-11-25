@@ -1,33 +1,18 @@
 import Option from "../Option/Option";
-import { SortableContainer, SortableElement } from "react-sortable-hoc";
-import { useState } from "react";
-import { arrayMoveImmutable } from "array-move";
-
-const SortableItem = SortableElement(({ value }) => <Option name={value} />);
-
-const SortableList = SortableContainer(({ items }) => {
-  return (
-    <ul className=" flex flex-col gap-4">
-      {items.map((value, index) => (
-        <SortableItem key={`item-${value}`} index={index} value={value} />
-      ))}
-    </ul>
-  );
-});
+import { useEffect, useState } from "react";
+import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import SelectedDetails from "../SelectedDetails/SelectedDetails";
 
 const Conference = ({ data }) => {
-  console.log(data);
-  const [items, setItems] = useState([
-    "Item 1",
-    "Item 2",
-    "Item 3",
-    "Item 4",
-    "Item 5",
-    "Item 6",
-  ]);
-  const onSortEnd = ({ oldIndex, newIndex }) => {
-    setItems((items) => arrayMoveImmutable(items, oldIndex, newIndex));
-  };
+  const [items, setItems] = useState(Object.keys(data));
+  const [selected, setSelected] = useState(items[0]);
+  const [selectedDetails, setSelectedDetails] = useState([]);
+
+  useEffect(() => {
+    setSelectedDetails(data[selected]);
+  }, [selected]);
+
+  console.log(selectedDetails);
 
   return (
     <>
@@ -37,9 +22,29 @@ const Conference = ({ data }) => {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8">
         <div className="col-span-1">
-          <SortableList items={items} onSortEnd={onSortEnd} />
+          <div className="flex flex-col gap-4">
+            {items.map((item, index) => (
+              <Option
+                name={item}
+                selected={selected}
+                setSelected={setSelected}
+              />
+            ))}
+          </div>
         </div>
-        <div className="md:col-span-2"></div>
+        <div className="md:col-span-2 bg-gray-100 rounded-lg p-2 md:p-10 flex flex-col gap-4 md:max-h-screen overflow-y-scroll">
+          {selectedDetails.map((item, index) => (
+            <SelectedDetails
+              name={item?.name || item?.location?.name}
+              about={item?.about || item?.location?.about}
+              firstName={item?.firstName}
+              lastName={item?.lastName}
+              image={item?.image?.url}
+              day={item?.day}
+              company={item?.company || item?.location?.city}
+            />
+          ))}
+        </div>
       </div>
     </>
   );
