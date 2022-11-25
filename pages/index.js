@@ -33,6 +33,9 @@ const FILMS_QUERY = `
     name
     year
     startDate
+    locations {
+      city
+    }
   }
 }
 `;
