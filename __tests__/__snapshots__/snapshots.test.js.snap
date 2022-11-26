@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`all conference table 1`] = `
+<div>
+  <div
+    class="rounded-xl border overflow-x-auto"
+  >
+    <table
+      class="w-full"
+    >
+      <tbody>
+        <tr>
+          <th
+            class="p-10 md:p-0 w-36 h-36 border"
+          >
+            undefined
+          </th>
+          <td
+            class="p-10 md:p-0 w-36 h-36 border text-center"
+          >
+            <span
+              class="font-bold"
+            />
+            <a
+              class="p-1 bg-blue-600/30 border-blue-700 border rounded-lg text-blue-700 flex flex-col m-2"
+              href="/undefined"
+            >
+              <span
+                class="font-semibold"
+              />
+              <span
+                class="text-sm"
+              />
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`single conference 1`] = `
+<div>
+  <h2
+    class="font-bold text-4xl mb-4 mt-16"
+  >
+    Conference info 
+  </h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, cumque.
+  </p>
+  <div
+    class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8"
+  >
+    <div
+      class="col-span-1"
+    >
+      <div
+        class="flex flex-col gap-4"
+        data-rbd-droppable-context-id="0"
+        data-rbd-droppable-id="characters"
+      >
+        <div
+          aria-describedby="rbd-hidden-text-0-hidden-text-0"
+          data-rbd-drag-handle-context-id="0"
+          data-rbd-drag-handle-draggable-id="item0"
+          data-rbd-draggable-context-id="0"
+          data-rbd-draggable-id="item0"
+          draggable="false"
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="bg-yellow-400 border rounded-md flex items-center gap-4 p-4 hover:bg-yellow-400 cursor-fancy group font-semibold drop-shadow-lg"
+          >
+            <div
+              class="bg-white p-3 rounded-md cursor-fancy"
+            >
+              <svg
+                class="text-lg text-yellow-400 "
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <span
+              class="text-white group-hover:text-white"
+            >
+              Data
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="md:col-span-2 bg-gray-100 rounded-lg p-2 md:p-10 flex flex-col gap-4 md:max-h-screen overflow-y-scroll"
+    />
+  </div>
+</div>
+`;
+
+exports[`single conference details 1`] = `
+<div>
+  <div
+    class="bg-white p-2 md:p-4 grid grid-cols-5 gap-2 items-center rounded-md"
+  >
+    <div
+      class="col-span-2 md:col-span-1"
+    >
+      <b
+        class="rounded-lg w-28 h-28"
+      />
+    </div>
+    <div
+      class="col-span-3 md:col-span-4 flex flex-col gap-4"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-between md:items-end"
+      >
+        <b
+          class="font-bold"
+        />
+        <p
+          class="text-sm text-gray-700"
+        />
+      </div>
+      <p
+        class="text-justify"
+      />
+    </div>
+  </div>
+</div>
+`;

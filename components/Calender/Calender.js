@@ -33,7 +33,8 @@ const Calender = ({ conferences }) => {
                   >
                     <span className="font-semibold">{schedule.name}</span>
                     <span className="text-sm">
-                      {schedule.locations[0]?.city}
+                      {schedule?.locations?.length &&
+                        schedule?.locations[0]?.city}
                     </span>
                   </Link>
                 </td>

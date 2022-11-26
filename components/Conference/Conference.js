@@ -66,18 +66,19 @@ const Conference = ({ data: { __typename, name, ...data } }) => {
           </DragDropContext>
         </div>
         <div className="md:col-span-2 bg-gray-100 rounded-lg p-2 md:p-10 flex flex-col gap-4 md:max-h-screen overflow-y-scroll">
-          {selectedDetails.map((item, index) => (
-            <SelectedDetails
-              key={index}
-              name={item?.name || item?.location?.name}
-              about={item?.about || item?.location?.about}
-              firstName={item?.firstName}
-              lastName={item?.lastName}
-              image={item?.image?.url}
-              day={item?.day}
-              company={item?.company || item?.location?.city}
-            />
-          ))}
+          {Boolean(selectedDetails?.length) &&
+            selectedDetails.map((item, index) => (
+              <SelectedDetails
+                key={index}
+                name={item?.name || item?.location?.name}
+                about={item?.about || item?.location?.about}
+                firstName={item?.firstName}
+                lastName={item?.lastName}
+                image={item?.image?.url}
+                day={item?.day}
+                company={item?.company || item?.location?.city}
+              />
+            ))}
         </div>
       </div>
     </>
