@@ -5,7 +5,7 @@ import client from "../../utils/apollo-client";
 import { gql } from "@apollo/client";
 
 const index = ({ data }) => {
-  return <Layout children={<Conference data={data} />} />;
+  return <Layout title={data?.name} children={<Conference data={data} />} />;
 };
 
 const endpoint = "https://api.react-finland.fi/graphql/";
@@ -15,6 +15,7 @@ export const getServerSideProps = async (ctx) => {
   const QUERY = gql`
 {
   conference(id: "${conferenceId}") {
+    name
     organizers {
       about
       company
