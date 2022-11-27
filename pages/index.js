@@ -9,15 +9,9 @@ import client from "../utils/apollo-client";
 export default function Home({ conferences }) {
   return (
     <div>
-      <Layout
-        title={"React Conference"}
-        children={
-          <>
-            <Hero />
-            <Scheduler conferences={conferences} />
-          </>
-        }
-      />
+      <Layout title={"React Conference"} />
+      <Hero />
+      <Scheduler conferences={conferences} />
     </div>
   );
 }

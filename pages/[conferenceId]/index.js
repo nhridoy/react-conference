@@ -5,7 +5,11 @@ import client from "../../utils/apollo-client";
 import { gql } from "@apollo/client";
 
 const index = ({ data }) => {
-  return <Layout title={data?.name} children={<Conference data={data} />} />;
+  return (
+    <Layout title={data?.name}>
+      <Conference data={data} />
+    </Layout>
+  );
 };
 
 const endpoint = "https://api.react-finland.fi/graphql/";
