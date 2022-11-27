@@ -9,7 +9,7 @@ const Layout = ({ children, title }) => {
         <meta name="description" content={title} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="h-screen bg-gradient-to-b from-pink-100 ">
+      <div className="bg-gradient-to-b from-pink-100 ">
         <Header />
         <main className="container mx-auto px-6">{children}</main>
       </div>

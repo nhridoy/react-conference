@@ -10,7 +10,7 @@ const Hero = () => {
     });
   };
   return (
-    <div className="grid md:grid-cols-12 gap-5 relative">
+    <div className="h-screen grid md:grid-cols-12 gap-5 relative">
       <h1 className="text-5xl md:text-7xl font-bold text-right md:col-start-3 md:col-span-5 text-clr order-1">
         React Conference
       </h1>
