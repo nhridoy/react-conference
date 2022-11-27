@@ -11,7 +11,7 @@ const Layout = ({ children, title }) => {
       </Head>
       <div className="bg-gradient-to-b from-pink-100 ">
         <Header />
-        <main className="container mx-auto px-6">{children}</main>
+        <main className="h-screen container mx-auto px-6">{children}</main>
       </div>
     </>
   );
